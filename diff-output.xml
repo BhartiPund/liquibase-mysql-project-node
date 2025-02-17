@@ -1,0 +1,363 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="SOMESH (generated)" id="1739506929483-18">
+        <dropTable tableName="test_table"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-1">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field1" tableName="table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-2">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field1" tableName="table3"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-3">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field2" tableName="table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-4">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field2" tableName="table3"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-5">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field3" tableName="table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-6">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field3" tableName="table3"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-7">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field3" tableName="tbl_user"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-8">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field4" tableName="table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-9">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field4" tableName="table3"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-10">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Field4" tableName="tbl_user"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-11">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Name" tableName="tbl_user"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-12">
+        <dropDefaultValue columnDataType="varchar(500)" columnName="Password" tableName="tbl_user"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-13">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="example_table"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-14">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="example_table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-15">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="table2"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-16">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="table3"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506929483-17">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="tbl_user"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-1">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-2">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-3">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-4">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-5">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-6">
+        <dropUniqueConstraint constraintName="email" tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-7">
+        <dropTable tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507052639-8">
+        <dropTable tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-1">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-2">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-3">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-4">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-5">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-6">
+        <dropUniqueConstraint constraintName="email" tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-7">
+        <dropTable tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507287124-8">
+        <dropTable tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-10">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-11">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-12">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-13">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-14">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-1">
+        <modifyDataType columnName="checksum" newDataType="int(10)" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-2">
+        <dropDefaultValue columnDataType="int(10)" columnName="checksum" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-3">
+        <addDefaultValue columnDataType="timestamp(0)" columnName="created_at" defaultValueComputed="CURRENT_TIMESTAMP" tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-4">
+        <modifyDataType columnName="execution_time" newDataType="int(10)" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-5">
+        <modifyDataType columnName="id" newDataType="int(10)" tableName="flywayusers11"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-6">
+        <addDefaultValue columnDataType="timestamp(0)" columnName="installed_on" defaultValueComputed="CURRENT_TIMESTAMP" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-7">
+        <modifyDataType columnName="installed_rank" newDataType="int(10)" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-8">
+        <modifyDataType columnName="success" newDataType="boolean" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739507913038-9">
+        <dropDefaultValue columnDataType="varchar(50)" columnName="version" tableName="flyway_schema_history"/>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-1">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-2">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-3">
+        <createTable tableName="flyway_schema_history">
+            <column name="installed_rank" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="script" type="VARCHAR(1000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="checksum" type="INT"/>
+            <column name="installed_by" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="installed_on" type="TIMESTAMP(0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="execution_time" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="success" type="BIT(1)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-4">
+        <createTable tableName="flywayusers11">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-5">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-6">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-7">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739508029899-8">
+        <createIndex associatedWith="" indexName="flyway_schema_history_s_idx" tableName="flyway_schema_history">
+            <column name="success"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

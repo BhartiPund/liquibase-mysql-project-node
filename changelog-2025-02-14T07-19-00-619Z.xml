@@ -1,0 +1,105 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="SOMESH (generated)" id="1739517534094-1">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-2">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-3">
+        <createTable tableName="flyway_schema_history">
+            <column name="installed_rank" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="script" type="VARCHAR(1000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="checksum" type="INT"/>
+            <column name="installed_by" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="installed_on" type="TIMESTAMP(0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="execution_time" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="success" type="BIT(1)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-4">
+        <createTable tableName="flywayusers11">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-5">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-6">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-7">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739517534094-8">
+        <createIndex associatedWith="" indexName="flyway_schema_history_s_idx" tableName="flyway_schema_history">
+            <column name="success"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

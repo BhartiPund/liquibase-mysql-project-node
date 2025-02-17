@@ -1,0 +1,56 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="SOMESH (generated)" id="1739506776657-1">
+        <createTable tableName="example_table">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506776657-2">
+        <createTable tableName="example_table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506776657-3">
+        <createTable tableName="table2">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506776657-4">
+        <createTable tableName="table3">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1739506776657-5">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="Name" type="VARCHAR(500)"/>
+            <column name="Password" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
