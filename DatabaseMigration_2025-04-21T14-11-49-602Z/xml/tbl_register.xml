@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="SOMESH (generated)" id="1745244735027-1">
+        <createTable tableName="tbl_register">
+            <column name="id" type="INT"/>
+            <column name="username" type="VARCHAR(50)"/>
+            <column name="password" type="VARCHAR(255)"/>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="mobile" type="VARCHAR(20)"/>
+            <column name="company_name" type="VARCHAR(100)"/>
+            <column name="company_id" type="VARCHAR(100)"/>
+            <column name="gender" type="ENUM('Male', 'Female', 'Other')"/>
+            <column name="nature_of_business" type="VARCHAR(100)"/>
+            <column name="country" type="VARCHAR(50)"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="plan_id" type="VARCHAR(100)"/>
+            <column name="expiry_date" type="TIMESTAMP(0)"/>
+            <column name="email_varification" type="ENUM('Verified', 'Pending', 'Not Verified')"/>
+            <column name="mobile_varification" type="ENUM('Verified', 'Pending', 'Not Verified')"/>
+            <column name="status" type="ENUM('Active', 'Inactive')"/>
+            <column name="Plan_expiry_notification" type="ENUM('Y', 'N')"/>
+            <column name="userType" type="ENUM('superadmin', 'admin', 'user')"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+            <column name="user_id" type="INT"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
