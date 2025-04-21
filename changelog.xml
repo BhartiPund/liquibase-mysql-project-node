@@ -4,36 +4,19 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-example_table2-0" author="auto">
-    <createTable tableName="example_table2">
+  <changeSet id="table-git_connections-0" author="auto">
+    <createTable tableName="git_connections">
       <column name="id" type="int" />
-      <column name="name" type="varchar(255)" />
-    </createTable>
-  </changeSet>
-  <changeSet id="table-tbl_register-1" author="auto">
-    <createTable tableName="tbl_register">
-      <column name="id" type="int" />
-      <column name="username" type="varchar(50)" />
-      <column name="password" type="varchar(255)" />
-      <column name="first_name" type="varchar(50)" />
-      <column name="last_name" type="varchar(50)" />
-      <column name="email" type="varchar(100)" />
-      <column name="mobile" type="varchar(20)" />
-      <column name="company_name" type="varchar(100)" />
-      <column name="company_id" type="varchar(100)" />
-      <column name="gender" type="enum('Male','Female','Other')" />
-      <column name="nature_of_business" type="varchar(100)" />
-      <column name="country" type="varchar(50)" />
-      <column name="date_of_birth" type="date" />
-      <column name="plan_id" type="varchar(100)" />
-      <column name="expiry_date" type="timestamp" />
-      <column name="email_varification" type="enum('Verified','Pending','Not Verified')" />
-      <column name="mobile_varification" type="enum('Verified','Pending','Not Verified')" />
-      <column name="status" type="enum('Active','Inactive')" />
-      <column name="Plan_expiry_notification" type="enum('Y','N')" />
-      <column name="userType" type="enum('superadmin','admin','user')" />
+      <column name="name" type="varchar(100)" />
+      <column name="branch" type="varchar(50)" />
+      <column name="url" type="text" />
+      <column name="username" type="varchar(100)" />
+      <column name="password" type="text" />
+      <column name="privateKey" type="text" />
+      <column name="provider" type="text" />
+      <column name="authType" type="varchar(50)" />
+      <column name="savePassword" type="tinyint(1)" />
       <column name="created_at" type="timestamp" />
-      <column name="user_id" type="int" />
     </createTable>
   </changeSet>
 </databaseChangeLog>
