@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1745316806111-1">
-        <createTable tableName="tbl_register">
+    <changeSet author="SOMESH (generated)" id="1745316811752-1">
+        <createTable tableName="tbl_user">
             <column autoIncrement="true" name="id" type="INT">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
@@ -23,25 +23,11 @@
             <column name="nature_of_business" type="VARCHAR(100)"/>
             <column name="country" type="VARCHAR(50)"/>
             <column name="date_of_birth" type="date"/>
-            <column name="plan_id" type="VARCHAR(100)"/>
-            <column defaultValueComputed="CURRENT_TIMESTAMP" name="expiry_date" type="TIMESTAMP(0)"/>
-            <column defaultValue="Verified" name="email_varification" type="ENUM('Verified', 'Pending', 'Not Verified')">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValue="Verified" name="mobile_varification" type="ENUM('Verified', 'Pending', 'Not Verified')">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValue="Active" name="status" type="ENUM('Active', 'Inactive')">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValue="Y" name="Plan_expiry_notification" type="ENUM('Y', 'N')">
-                <constraints nullable="false"/>
-            </column>
             <column defaultValue="user" name="userType" type="ENUM('superadmin', 'admin', 'user')">
                 <constraints nullable="false"/>
             </column>
             <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
-            <column name="user_id" type="INT">
+            <column defaultValue="active" name="userStatus" type="ENUM('active', 'inactive')">
                 <constraints nullable="false"/>
             </column>
         </createTable>
