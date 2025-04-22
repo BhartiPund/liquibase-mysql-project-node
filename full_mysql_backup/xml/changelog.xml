@@ -1,0 +1,99 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="SOMESH (generated)" id="1745314620982-1">
+        <createTable tableName="example_table2">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745314620982-2">
+        <createTable tableName="flywayusers11">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745314620982-3">
+        <createTable tableName="git_connections">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="branch" type="VARCHAR(50)"/>
+            <column name="url" type="TEXT"/>
+            <column name="username" type="VARCHAR(100)"/>
+            <column name="password" type="TEXT"/>
+            <column name="privateKey" type="TEXT"/>
+            <column name="provider" type="TEXT"/>
+            <column name="authType" type="VARCHAR(50)"/>
+            <column name="savePassword" type="BIT(1)"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745314620982-4">
+        <createTable tableName="table3">
+            <column name="id" type="INT"/>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745314620982-5">
+        <createTable tableName="tbl_register">
+            <column name="id" type="INT"/>
+            <column name="username" type="VARCHAR(50)"/>
+            <column name="password" type="VARCHAR(255)"/>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="mobile" type="VARCHAR(20)"/>
+            <column name="company_name" type="VARCHAR(100)"/>
+            <column name="company_id" type="VARCHAR(100)"/>
+            <column name="gender" type="ENUM('Male', 'Female', 'Other')"/>
+            <column name="nature_of_business" type="VARCHAR(100)"/>
+            <column name="country" type="VARCHAR(50)"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="plan_id" type="VARCHAR(100)"/>
+            <column name="expiry_date" type="TIMESTAMP(0)"/>
+            <column name="email_varification" type="ENUM('Verified', 'Pending', 'Not Verified')"/>
+            <column name="mobile_varification" type="ENUM('Verified', 'Pending', 'Not Verified')"/>
+            <column name="status" type="ENUM('Active', 'Inactive')"/>
+            <column name="Plan_expiry_notification" type="ENUM('Y', 'N')"/>
+            <column name="userType" type="ENUM('superadmin', 'admin', 'user')"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+            <column name="user_id" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745314620982-6">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mobile" type="VARCHAR(20)"/>
+            <column name="company_name" type="VARCHAR(100)"/>
+            <column name="company_id" type="VARCHAR(100)"/>
+            <column name="gender" type="ENUM('Male', 'Female', 'Other')"/>
+            <column name="nature_of_business" type="VARCHAR(100)"/>
+            <column name="country" type="VARCHAR(50)"/>
+            <column name="date_of_birth" type="date"/>
+            <column defaultValue="user" name="userType" type="ENUM('superadmin', 'admin', 'user')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+            <column defaultValue="active" name="userStatus" type="ENUM('active', 'inactive')">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
