@@ -5,3 +5,4 @@ table-git_connections-0,auto,changelog.xml,Mon Apr 21 2025 17:10:58 GMT+0530 (In
 table-table3-0,auto,changelog.xml,Mon Apr 21 2025 19:42:31 GMT+0530 (India Standard Time),4,EXECUTED,9:31075efccc80a889fc9cf60bb2bfd15d,createTable tableName=table3,,,4.31.0,,,5244748284
 table-flywayusers11-0,auto,changelog.xml,Tue Apr 22 2025 12:37:23 GMT+0530 (India Standard Time),5,EXECUTED,9:c30c4f3fda2c389f6814bca788f771ea,createTable tableName=flywayusers11,,,4.31.0,,,5305640457
 table-table2-0,auto,changelog.xml,Tue Apr 22 2025 15:48:03 GMT+0530 (India Standard Time),6,EXECUTED,9:73ba4c26ab690a0828fae7af0989ab08,createTable tableName=table2,,,4.31.0,,,5317079744
+table-flyway_schema_old-0,auto,changelog.xml,Tue Apr 22 2025 17:31:51 GMT+0530 (India Standard Time),7,EXECUTED,9:fd8fc44457b3edf9249462a99457095f,createTable tableName=flyway_schema_old,,,4.31.0,,,5323308202

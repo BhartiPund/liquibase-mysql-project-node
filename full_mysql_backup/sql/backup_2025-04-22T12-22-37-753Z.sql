@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-example_table2-0','auto','changelog.xml','2025-04-21 16:56:03',1,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'5234760164'),('table-tbl_register-1','auto','changelog.xml','2025-04-21 16:56:03',2,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'5234760164'),('table-git_connections-0','auto','changelog.xml','2025-04-21 17:10:58',3,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'5235655091'),('table-table3-0','auto','changelog.xml','2025-04-21 19:42:31',4,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5244748284'),('table-flywayusers11-0','auto','changelog.xml','2025-04-22 12:37:23',5,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5305640457'),('table-table2-0','auto','changelog.xml','2025-04-22 15:48:03',6,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5317079744');
+INSERT INTO `databasechangelog` VALUES ('table-example_table2-0','auto','changelog.xml','2025-04-21 16:56:03',1,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'5234760164'),('table-tbl_register-1','auto','changelog.xml','2025-04-21 16:56:03',2,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'5234760164'),('table-git_connections-0','auto','changelog.xml','2025-04-21 17:10:58',3,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'5235655091'),('table-table3-0','auto','changelog.xml','2025-04-21 19:42:31',4,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5244748284'),('table-flywayusers11-0','auto','changelog.xml','2025-04-22 12:37:23',5,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5305640457'),('table-table2-0','auto','changelog.xml','2025-04-22 15:48:03',6,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5317079744'),('table-flyway_schema_old-0','auto','changelog.xml','2025-04-22 17:31:51',7,'EXECUTED','9:fd8fc44457b3edf9249462a99457095f','createTable tableName=flyway_schema_old','',NULL,'4.31.0',NULL,NULL,'5323308202');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,6 +96,36 @@ CREATE TABLE `example_table2` (
 LOCK TABLES `example_table2` WRITE;
 /*!40000 ALTER TABLE `example_table2` DISABLE KEYS */;
 /*!40000 ALTER TABLE `example_table2` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `flyway_schema_old`
+--
+
+DROP TABLE IF EXISTS `flyway_schema_old`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `flyway_schema_old` (
+  `installed_rank` int DEFAULT NULL,
+  `version` varchar(50) DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `type` varchar(20) DEFAULT NULL,
+  `script` varchar(1000) DEFAULT NULL,
+  `checksum` int DEFAULT NULL,
+  `installed_by` varchar(100) DEFAULT NULL,
+  `installed_on` timestamp NULL DEFAULT NULL,
+  `execution_time` int DEFAULT NULL,
+  `success` bit(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `flyway_schema_old`
+--
+
+LOCK TABLES `flyway_schema_old` WRITE;
+/*!40000 ALTER TABLE `flyway_schema_old` DISABLE KEYS */;
+/*!40000 ALTER TABLE `flyway_schema_old` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -291,4 +321,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-22 17:30:48
+-- Dump completed on 2025-04-22 17:52:37
