@@ -1,12 +1,18 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1745410244547-1">
+    <changeSet author="SOMESH (generated)" id="1745410522699-1">
+        <createTable tableName="example_table">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745410522699-2">
         <createTable tableName="example_table2">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1745410244547-2">
+    <changeSet author="SOMESH (generated)" id="1745410522699-3">
         <createTable tableName="flywayusers11">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -14,7 +20,7 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1745410244547-3">
+    <changeSet author="SOMESH (generated)" id="1745410522699-4">
         <createTable tableName="table2">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -23,7 +29,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1745410244547-4">
+    <changeSet author="SOMESH (generated)" id="1745410522699-5">
         <createTable tableName="table3">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
