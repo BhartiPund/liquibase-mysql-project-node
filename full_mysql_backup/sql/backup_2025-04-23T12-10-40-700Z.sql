@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-example_table2-0','auto','changelog.xml','2025-04-22 19:25:59',1,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'5330156236'),('table-flywayusers11-0','auto','changelog.xml','2025-04-22 20:06:13',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5332568846'),('table-table3-0','auto','changelog.xml','2025-04-23 17:19:24',3,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5408961502');
+INSERT INTO `databasechangelog` VALUES ('table-example_table2-0','auto','changelog.xml','2025-04-22 19:25:59',1,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'5330156236'),('table-flywayusers11-0','auto','changelog.xml','2025-04-22 20:06:13',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5332568846'),('table-table3-0','auto','changelog.xml','2025-04-23 17:19:24',3,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5408961502'),('table-table2-0','auto','changelog.xml','2025-04-23 17:33:17',4,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5409794069');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -123,6 +123,31 @@ LOCK TABLES `flywayusers11` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `table2`
+--
+
+DROP TABLE IF EXISTS `table2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `table2` (
+  `id` int DEFAULT NULL,
+  `Field1` varchar(500) DEFAULT NULL,
+  `Field2` varchar(500) DEFAULT NULL,
+  `Field3` varchar(500) DEFAULT NULL,
+  `Field4` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `table2`
+--
+
+LOCK TABLES `table2` WRITE;
+/*!40000 ALTER TABLE `table2` DISABLE KEYS */;
+/*!40000 ALTER TABLE `table2` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `table3`
 --
 
@@ -156,4 +181,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-23 17:32:37
+-- Dump completed on 2025-04-23 17:40:40
