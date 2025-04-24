@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-23 19:32:19',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5416936580'),('table-table2-0','auto','changelog.xml','2025-04-23 20:17:44',2,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5419660067');
+INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-23 19:32:19',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5416936580'),('table-table2-0','auto','changelog.xml','2025-04-23 20:17:44',2,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5419660067'),('table-table3-0','auto','changelog.xml','2025-04-24 12:46:20',3,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5478977376'),('table-tbl_register-0','auto','changelog.xml','2025-04-24 14:31:49',4,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'5485306416');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,6 +124,73 @@ LOCK TABLES `table2` WRITE;
 /*!40000 ALTER TABLE `table2` DISABLE KEYS */;
 /*!40000 ALTER TABLE `table2` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `table3`
+--
+
+DROP TABLE IF EXISTS `table3`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `table3` (
+  `id` int DEFAULT NULL,
+  `Field1` varchar(500) DEFAULT NULL,
+  `Field2` varchar(500) DEFAULT NULL,
+  `Field3` varchar(500) DEFAULT NULL,
+  `Field4` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `table3`
+--
+
+LOCK TABLES `table3` WRITE;
+/*!40000 ALTER TABLE `table3` DISABLE KEYS */;
+/*!40000 ALTER TABLE `table3` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_register`
+--
+
+DROP TABLE IF EXISTS `tbl_register`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_register` (
+  `id` int DEFAULT NULL,
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `first_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `company_name` varchar(100) DEFAULT NULL,
+  `company_id` varchar(100) DEFAULT NULL,
+  `gender` enum('Male','Female','Other') DEFAULT NULL,
+  `nature_of_business` varchar(100) DEFAULT NULL,
+  `country` varchar(50) DEFAULT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `plan_id` varchar(100) DEFAULT NULL,
+  `expiry_date` timestamp NULL DEFAULT NULL,
+  `email_varification` enum('Verified','Pending','Not Verified') DEFAULT NULL,
+  `mobile_varification` enum('Verified','Pending','Not Verified') DEFAULT NULL,
+  `status` enum('Active','Inactive') DEFAULT NULL,
+  `Plan_expiry_notification` enum('Y','N') DEFAULT NULL,
+  `userType` enum('superadmin','admin','user') DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `user_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_register`
+--
+
+LOCK TABLES `tbl_register` WRITE;
+/*!40000 ALTER TABLE `tbl_register` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_register` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -134,4 +201,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-24 12:45:48
+-- Dump completed on 2025-04-24 15:15:46
