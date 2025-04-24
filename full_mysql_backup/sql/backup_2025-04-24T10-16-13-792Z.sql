@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-24 15:23:07',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5488383964'),('table-table3-0','auto','changelog.xml','2025-04-24 15:26:22',2,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5488579721'),('table-table2-0','auto','changelog.xml','2025-04-24 15:30:08',3,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5488805000');
+INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-24 15:23:07',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5488383964'),('table-table3-0','auto','changelog.xml','2025-04-24 15:26:22',2,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'5488579721'),('table-table2-0','auto','changelog.xml','2025-04-24 15:30:08',3,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5488805000'),('table-git_connections-0','auto','changelog.xml','2025-04-24 15:39:48',4,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'5489384983');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -98,6 +98,37 @@ CREATE TABLE `flywayusers11` (
 LOCK TABLES `flywayusers11` WRITE;
 /*!40000 ALTER TABLE `flywayusers11` DISABLE KEYS */;
 /*!40000 ALTER TABLE `flywayusers11` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `git_connections`
+--
+
+DROP TABLE IF EXISTS `git_connections`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `git_connections` (
+  `id` int DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `branch` varchar(50) DEFAULT NULL,
+  `url` text,
+  `username` varchar(100) DEFAULT NULL,
+  `password` text,
+  `privateKey` text,
+  `provider` text,
+  `authType` varchar(50) DEFAULT NULL,
+  `savePassword` tinyint(1) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `git_connections`
+--
+
+LOCK TABLES `git_connections` WRITE;
+/*!40000 ALTER TABLE `git_connections` DISABLE KEYS */;
+/*!40000 ALTER TABLE `git_connections` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -159,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-24 15:39:10
+-- Dump completed on 2025-04-24 15:46:13
