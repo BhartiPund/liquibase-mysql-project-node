@@ -1,12 +1,20 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1745505112326-1">
+    <changeSet author="SOMESH (generated)" id="1745505335315-1">
         <createTable tableName="example_table2">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1745505112326-2">
+    <changeSet author="SOMESH (generated)" id="1745505335315-2">
+        <createTable tableName="flywayusers11">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1745505335315-3">
         <createTable tableName="table3">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -15,7 +23,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1745505112326-3">
+    <changeSet author="SOMESH (generated)" id="1745505335315-4">
         <createView fullDefinition="false" remarks="VIEW" viewName="view_all_names">select `databasemigration`.`example_table2`.`id` AS `id`,`databasemigration`.`example_table2`.`name` AS `name` from `databasemigration`.`example_table2`</createView>
     </changeSet>
 </databaseChangeLog>

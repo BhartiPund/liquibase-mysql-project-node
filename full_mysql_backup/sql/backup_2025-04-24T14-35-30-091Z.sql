@@ -16,6 +16,67 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `databasechangelog`
+--
+
+DROP TABLE IF EXISTS `databasechangelog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `databasechangelog` (
+  `ID` varchar(255) NOT NULL,
+  `AUTHOR` varchar(255) NOT NULL,
+  `FILENAME` varchar(255) NOT NULL,
+  `DATEEXECUTED` datetime NOT NULL,
+  `ORDEREXECUTED` int NOT NULL,
+  `EXECTYPE` varchar(10) NOT NULL,
+  `MD5SUM` varchar(35) DEFAULT NULL,
+  `DESCRIPTION` varchar(255) DEFAULT NULL,
+  `COMMENTS` varchar(255) DEFAULT NULL,
+  `TAG` varchar(255) DEFAULT NULL,
+  `LIQUIBASE` varchar(20) DEFAULT NULL,
+  `CONTEXTS` varchar(255) DEFAULT NULL,
+  `LABELS` varchar(255) DEFAULT NULL,
+  `DEPLOYMENT_ID` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `databasechangelog`
+--
+
+LOCK TABLES `databasechangelog` WRITE;
+/*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
+INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-24 20:02:23',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5505139927');
+/*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `databasechangeloglock`
+--
+
+DROP TABLE IF EXISTS `databasechangeloglock`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `databasechangeloglock` (
+  `ID` int NOT NULL,
+  `LOCKED` tinyint NOT NULL,
+  `LOCKGRANTED` datetime DEFAULT NULL,
+  `LOCKEDBY` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `databasechangeloglock`
+--
+
+LOCK TABLES `databasechangeloglock` WRITE;
+/*!40000 ALTER TABLE `databasechangeloglock` DISABLE KEYS */;
+INSERT INTO `databasechangeloglock` VALUES (1,0,NULL,NULL);
+/*!40000 ALTER TABLE `databasechangeloglock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `example_table2`
 --
 
@@ -35,6 +96,30 @@ CREATE TABLE `example_table2` (
 LOCK TABLES `example_table2` WRITE;
 /*!40000 ALTER TABLE `example_table2` DISABLE KEYS */;
 /*!40000 ALTER TABLE `example_table2` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `flywayusers11`
+--
+
+DROP TABLE IF EXISTS `flywayusers11`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `flywayusers11` (
+  `id` int DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `flywayusers11`
+--
+
+LOCK TABLES `flywayusers11` WRITE;
+/*!40000 ALTER TABLE `flywayusers11` DISABLE KEYS */;
+/*!40000 ALTER TABLE `flywayusers11` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -102,4 +187,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-24 20:01:48
+-- Dump completed on 2025-04-24 20:05:30
