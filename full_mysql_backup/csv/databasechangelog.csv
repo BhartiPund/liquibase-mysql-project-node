@@ -1,2 +1,2 @@
 ID,AUTHOR,FILENAME,DATEEXECUTED,ORDEREXECUTED,EXECTYPE,MD5SUM,DESCRIPTION,COMMENTS,TAG,LIQUIBASE,CONTEXTS,LABELS,DEPLOYMENT_ID
-table-flywayusers11-0,auto,changelog.xml,Thu Apr 24 2025 20:02:23 GMT+0530 (India Standard Time),1,EXECUTED,9:c30c4f3fda2c389f6814bca788f771ea,createTable tableName=flywayusers11,,,4.31.0,,,5505139927
+table-table2-0,auto,changelog.xml,Fri Apr 25 2025 19:57:57 GMT+0530 (India Standard Time),1,EXECUTED,9:73ba4c26ab690a0828fae7af0989ab08,createTable tableName=table2,,,4.31.0,,,5591274245

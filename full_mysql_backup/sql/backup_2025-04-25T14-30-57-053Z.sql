@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-04-24 20:02:23',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5505139927');
+INSERT INTO `databasechangelog` VALUES ('table-table2-0','auto','changelog.xml','2025-04-25 19:57:57',1,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5591274245');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,59 +77,13 @@ INSERT INTO `databasechangeloglock` VALUES (1,0,NULL,NULL);
 UNLOCK TABLES;
 
 --
--- Table structure for table `example_table2`
+-- Table structure for table `table2`
 --
 
-DROP TABLE IF EXISTS `example_table2`;
+DROP TABLE IF EXISTS `table2`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `example_table2` (
-  `id` int DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `example_table2`
---
-
-LOCK TABLES `example_table2` WRITE;
-/*!40000 ALTER TABLE `example_table2` DISABLE KEYS */;
-/*!40000 ALTER TABLE `example_table2` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `flywayusers11`
---
-
-DROP TABLE IF EXISTS `flywayusers11`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `flywayusers11` (
-  `id` int DEFAULT NULL,
-  `name` varchar(100) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `flywayusers11`
---
-
-LOCK TABLES `flywayusers11` WRITE;
-/*!40000 ALTER TABLE `flywayusers11` DISABLE KEYS */;
-/*!40000 ALTER TABLE `flywayusers11` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `table3`
---
-
-DROP TABLE IF EXISTS `table3`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `table3` (
+CREATE TABLE `table2` (
   `id` int DEFAULT NULL,
   `Field1` varchar(500) DEFAULT NULL,
   `Field2` varchar(500) DEFAULT NULL,
@@ -139,44 +93,13 @@ CREATE TABLE `table3` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `table3`
+-- Dumping data for table `table2`
 --
 
-LOCK TABLES `table3` WRITE;
-/*!40000 ALTER TABLE `table3` DISABLE KEYS */;
-/*!40000 ALTER TABLE `table3` ENABLE KEYS */;
+LOCK TABLES `table2` WRITE;
+/*!40000 ALTER TABLE `table2` DISABLE KEYS */;
+/*!40000 ALTER TABLE `table2` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Temporary view structure for view `view_all_names`
---
-
-DROP TABLE IF EXISTS `view_all_names`;
-/*!50001 DROP VIEW IF EXISTS `view_all_names`*/;
-SET @saved_cs_client     = @@character_set_client;
-/*!50503 SET character_set_client = utf8mb4 */;
-/*!50001 CREATE VIEW `view_all_names` AS SELECT 
- 1 AS `id`,
- 1 AS `name`*/;
-SET character_set_client = @saved_cs_client;
-
---
--- Final view structure for view `view_all_names`
---
-
-/*!50001 DROP VIEW IF EXISTS `view_all_names`*/;
-/*!50001 SET @saved_cs_client          = @@character_set_client */;
-/*!50001 SET @saved_cs_results         = @@character_set_results */;
-/*!50001 SET @saved_col_connection     = @@collation_connection */;
-/*!50001 SET character_set_client      = utf8mb4 */;
-/*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
-/*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `view_all_names` AS select `example_table2`.`id` AS `id`,`example_table2`.`name` AS `name` from `example_table2` */;
-/*!50001 SET character_set_client      = @saved_cs_client */;
-/*!50001 SET character_set_results     = @saved_cs_results */;
-/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -187,4 +110,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-24 20:05:30
+-- Dump completed on 2025-04-25 20:00:57
