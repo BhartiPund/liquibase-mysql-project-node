@@ -4,18 +4,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-git_connections-0" author="auto">
-    <createTable tableName="git_connections">
+  <changeSet id="table-flywayusers11-0" author="auto">
+    <createTable tableName="flywayusers11">
       <column name="id" type="int" />
       <column name="name" type="varchar(100)" />
-      <column name="branch" type="varchar(50)" />
-      <column name="url" type="text" />
-      <column name="username" type="varchar(100)" />
-      <column name="password" type="text" />
-      <column name="privateKey" type="text" />
-      <column name="provider" type="text" />
-      <column name="authType" type="varchar(50)" />
-      <column name="savePassword" type="tinyint(1)" />
+      <column name="email" type="varchar(100)" />
       <column name="created_at" type="timestamp" />
     </createTable>
   </changeSet>
