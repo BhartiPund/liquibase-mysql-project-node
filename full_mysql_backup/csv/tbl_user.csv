@@ -1,0 +1,3 @@
+id,username,password,first_name,last_name,email,mobile,company_name,company_id,gender,nature_of_business,country,date_of_birth,userType,created_at,userStatus
+1,tanvi@123.com,tanvi,Tanvi,Sharma,tanvi@123.com,9986525629,Devotrend IT,102,Female,nature,India,Tue Feb 25 2025 00:00:00 GMT+0530 (India Standard Time),admin,Tue Feb 25 2025 20:37:22 GMT+0530 (India Standard Time),active
+2,bharti@123.com,123,bharti,LAST,bharti@123.com,1234567898,Devotrend IT,102,Male,nature,Andorra,Fri Apr 04 2025 00:00:00 GMT+0530 (India Standard Time),admin,Fri Apr 04 2025 18:48:22 GMT+0530 (India Standard Time),active

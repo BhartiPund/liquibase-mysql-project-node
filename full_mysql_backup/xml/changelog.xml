@@ -1,6 +1,123 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1745591461833-1">
+    <changeSet author="SOMESH (generated)" id="1746025058067-1">
+        <createTable tableName="connections">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="connection_name" type="VARCHAR(100)"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="host" type="VARCHAR(100)"/>
+            <column name="port" type="INT"/>
+            <column name="database_name" type="VARCHAR(100)"/>
+            <column name="username" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+            <column name="url" type="TEXT"/>
+            <column name="password" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-2">
+        <createTable tableName="custom_changelog_log">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="user_id" type="VARCHAR(500)"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="userType" type="VARCHAR(255)"/>
+            <column name="company_name" type="VARCHAR(255)"/>
+            <column name="company_id" type="VARCHAR(255)"/>
+            <column name="changelog_file" type="VARCHAR(500)"/>
+            <column name="changelog_label" type="VARCHAR(255)"/>
+            <column name="git_repo" type="VARCHAR(500)"/>
+            <column name="commit_message" type="TEXT"/>
+            <column name="git_commit_id" type="VARCHAR(100)"/>
+            <column name="migration_status" type="VARCHAR(50)"/>
+            <column name="git_status" type="VARCHAR(50)"/>
+            <column name="migration_output" type="TEXT"/>
+            <column name="git_output" type="TEXT"/>
+            <column name="target_db_url" type="VARCHAR(500)"/>
+            <column name="target_Connection_Name" type="VARCHAR(500)"/>
+            <column name="source_db_url" type="VARCHAR(500)"/>
+            <column name="source_Connection_Name" type="VARCHAR(500)"/>
+            <column name="migration_Dtails" type="VARCHAR(500)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="executed_at" type="datetime(0)"/>
+            <column name="itemAdded" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-3">
+        <createTable tableName="database_connections">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="db_type" type="VARCHAR(50)"/>
+            <column name="host" type="VARCHAR(100)"/>
+            <column name="username" type="VARCHAR(100)"/>
+            <column name="password" type="VARCHAR(100)"/>
+            <column name="port" type="INT"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-4">
+        <createTable tableName="example_table">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-5">
+        <createTable tableName="flyway_schema_history">
+            <column name="installed_rank" type="INT"/>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="script" type="VARCHAR(1000)"/>
+            <column name="checksum" type="INT"/>
+            <column name="installed_by" type="VARCHAR(100)"/>
+            <column name="installed_on" type="TIMESTAMP(0)"/>
+            <column name="execution_time" type="INT"/>
+            <column name="success" type="BIT(1)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-6">
+        <createTable tableName="flyway_schema_old">
+            <column name="installed_rank" type="INT"/>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="script" type="VARCHAR(1000)"/>
+            <column name="checksum" type="INT"/>
+            <column name="installed_by" type="VARCHAR(100)"/>
+            <column name="installed_on" type="TIMESTAMP(0)"/>
+            <column name="execution_time" type="INT"/>
+            <column name="success" type="BIT(1)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-7">
+        <createTable tableName="flywayusers11">
+            <column name="id" type="INT"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-8">
+        <createTable tableName="git_connections">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="branch" type="VARCHAR(50)"/>
+            <column name="url" type="TEXT"/>
+            <column name="username" type="VARCHAR(100)"/>
+            <column name="password" type="TEXT"/>
+            <column name="privateKey" type="TEXT"/>
+            <column name="provider" type="TEXT"/>
+            <column name="authType" type="VARCHAR(50)"/>
+            <column name="savePassword" type="BIT(1)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-9">
         <createTable tableName="table2">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -8,5 +125,95 @@
             <column name="Field3" type="VARCHAR(500)"/>
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-10">
+        <createTable tableName="table3">
+            <column name="id" type="INT"/>
+            <column name="Field1" type="VARCHAR(500)"/>
+            <column name="Field2" type="VARCHAR(500)"/>
+            <column name="Field3" type="VARCHAR(500)"/>
+            <column name="Field4" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-11">
+        <createTable tableName="tbl_register">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mobile" type="VARCHAR(20)"/>
+            <column name="company_name" type="VARCHAR(100)"/>
+            <column name="company_id" type="VARCHAR(100)"/>
+            <column name="gender" type="ENUM('Male', 'Female', 'Other')"/>
+            <column name="nature_of_business" type="VARCHAR(100)"/>
+            <column name="country" type="VARCHAR(50)"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="plan_id" type="VARCHAR(100)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="expiry_date" type="TIMESTAMP(0)"/>
+            <column defaultValue="Verified" name="email_varification" type="ENUM('Verified', 'Pending', 'Not Verified')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="Verified" name="mobile_varification" type="ENUM('Verified', 'Pending', 'Not Verified')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="Active" name="status" type="ENUM('Active', 'Inactive')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="Y" name="Plan_expiry_notification" type="ENUM('Y', 'N')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="user" name="userType" type="ENUM('superadmin', 'admin', 'user')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+            <column name="user_id" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-12">
+        <createTable tableName="tbl_user">
+            <column autoIncrement="true" name="id" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mobile" type="VARCHAR(20)"/>
+            <column name="company_name" type="VARCHAR(100)"/>
+            <column name="company_id" type="VARCHAR(100)"/>
+            <column name="gender" type="ENUM('Male', 'Female', 'Other')"/>
+            <column name="nature_of_business" type="VARCHAR(100)"/>
+            <column name="country" type="VARCHAR(50)"/>
+            <column name="date_of_birth" type="date"/>
+            <column defaultValue="user" name="userType" type="ENUM('superadmin', 'admin', 'user')">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="created_at" type="TIMESTAMP(0)"/>
+            <column defaultValue="active" name="userStatus" type="ENUM('active', 'inactive')">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746025058067-13">
+        <createView fullDefinition="false" remarks="VIEW" viewName="view_all_user">select `liquibase_db`.`tbl_user`.`id` AS `id`,`liquibase_db`.`tbl_user`.`username` AS `username` from `liquibase_db`.`tbl_user`</createView>
     </changeSet>
 </databaseChangeLog>
