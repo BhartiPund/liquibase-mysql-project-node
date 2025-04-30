@@ -4,12 +4,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-flywayusers11-0" author="auto">
-    <createTable tableName="flywayusers11">
+  <changeSet id="table-example_table2-0" author="auto">
+    <createTable tableName="example_table2">
       <column name="id" type="int" />
-      <column name="name" type="varchar(100)" />
-      <column name="email" type="varchar(100)" />
-      <column name="created_at" type="timestamp" />
+      <column name="name" type="varchar(255)" />
     </createTable>
   </changeSet>
 </databaseChangeLog>
