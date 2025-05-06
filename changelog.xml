@@ -4,25 +4,13 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-example_table2-0" author="auto">
-    <createTable tableName="example_table2">
+  <changeSet id="table-table3-0" author="auto">
+    <createTable tableName="table3">
       <column name="id" type="int" />
-      <column name="name" type="varchar(255)" />
-    </createTable>
-  </changeSet>
-  <changeSet id="table-git_connections-1" author="auto">
-    <createTable tableName="git_connections">
-      <column name="id" type="int" />
-      <column name="name" type="varchar(100)" />
-      <column name="branch" type="varchar(50)" />
-      <column name="url" type="text" />
-      <column name="username" type="varchar(100)" />
-      <column name="password" type="text" />
-      <column name="privateKey" type="text" />
-      <column name="provider" type="text" />
-      <column name="authType" type="varchar(50)" />
-      <column name="savePassword" type="tinyint(1)" />
-      <column name="created_at" type="timestamp" />
+      <column name="Field1" type="varchar(500)" />
+      <column name="Field2" type="varchar(500)" />
+      <column name="Field3" type="varchar(500)" />
+      <column name="Field4" type="varchar(500)" />
     </createTable>
   </changeSet>
 </databaseChangeLog>
