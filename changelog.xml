@@ -4,10 +4,16 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-TABLE1-0" author="auto">
-    <createTable tableName="TABLE1">
-      <column name="COLUMN1" type="VARCHAR2" />
-      <column name="COLUMN2" type="VARCHAR2" />
+  <changeSet id="table-database_connections-0" author="auto">
+    <createTable tableName="database_connections">
+      <column name="id" type="int" />
+      <column name="name" type="varchar(100)" />
+      <column name="db_type" type="varchar(50)" />
+      <column name="host" type="varchar(100)" />
+      <column name="username" type="varchar(100)" />
+      <column name="password" type="varchar(100)" />
+      <column name="port" type="int" />
+      <column name="created_at" type="timestamp" />
     </createTable>
   </changeSet>
 </databaseChangeLog>
