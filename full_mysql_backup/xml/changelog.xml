@@ -1,6 +1,46 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1746524156931-1">
+    <changeSet author="SOMESH (generated)" id="1746528843955-1">
+        <createTable tableName="connections">
+            <column name="id" type="INT"/>
+            <column name="connection_name" type="VARCHAR(100)"/>
+            <column name="name" type="VARCHAR(100)"/>
+            <column name="host" type="VARCHAR(100)"/>
+            <column name="port" type="INT"/>
+            <column name="database_name" type="VARCHAR(100)"/>
+            <column name="username" type="VARCHAR(100)"/>
+            <column name="created_at" type="TIMESTAMP(0)"/>
+            <column name="url" type="TEXT"/>
+            <column name="password" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746528843955-2">
+        <createTable tableName="custom_changelog_log">
+            <column name="id" type="INT"/>
+            <column name="user_id" type="VARCHAR(500)"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="userType" type="VARCHAR(255)"/>
+            <column name="company_name" type="VARCHAR(255)"/>
+            <column name="company_id" type="VARCHAR(255)"/>
+            <column name="changelog_file" type="VARCHAR(500)"/>
+            <column name="changelog_label" type="VARCHAR(255)"/>
+            <column name="git_repo" type="VARCHAR(500)"/>
+            <column name="commit_message" type="TEXT"/>
+            <column name="git_commit_id" type="VARCHAR(100)"/>
+            <column name="migration_status" type="VARCHAR(50)"/>
+            <column name="git_status" type="VARCHAR(50)"/>
+            <column name="migration_output" type="TEXT"/>
+            <column name="git_output" type="TEXT"/>
+            <column name="target_db_url" type="VARCHAR(500)"/>
+            <column name="target_Connection_Name" type="VARCHAR(500)"/>
+            <column name="source_db_url" type="VARCHAR(500)"/>
+            <column name="source_Connection_Name" type="VARCHAR(500)"/>
+            <column name="migration_Dtails" type="VARCHAR(500)"/>
+            <column name="executed_at" type="datetime(0)"/>
+            <column name="itemAdded" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746528843955-3">
         <createTable tableName="database_connections">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -12,13 +52,13 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-2">
+    <changeSet author="SOMESH (generated)" id="1746528843955-4">
         <createTable tableName="example_table2">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-3">
+    <changeSet author="SOMESH (generated)" id="1746528843955-5">
         <createTable tableName="flyway_schema_history">
             <column name="installed_rank" type="INT"/>
             <column name="version" type="VARCHAR(50)"/>
@@ -32,7 +72,7 @@
             <column name="success" type="BIT(1)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-4">
+    <changeSet author="SOMESH (generated)" id="1746528843955-6">
         <createTable tableName="flyway_schema_old">
             <column name="installed_rank" type="INT"/>
             <column name="version" type="VARCHAR(50)"/>
@@ -46,7 +86,7 @@
             <column name="success" type="BIT(1)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-5">
+    <changeSet author="SOMESH (generated)" id="1746528843955-7">
         <createTable tableName="flywayusers11">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -54,7 +94,7 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-6">
+    <changeSet author="SOMESH (generated)" id="1746528843955-8">
         <createTable tableName="git_connections">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -69,7 +109,7 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-7">
+    <changeSet author="SOMESH (generated)" id="1746528843955-9">
         <createTable tableName="table2">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -78,7 +118,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-8">
+    <changeSet author="SOMESH (generated)" id="1746528843955-10">
         <createTable tableName="table3">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -87,7 +127,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-9">
+    <changeSet author="SOMESH (generated)" id="1746528843955-11">
         <createTable tableName="tbl_register">
             <column name="id" type="INT"/>
             <column name="username" type="VARCHAR(50)"/>
@@ -113,7 +153,7 @@
             <column name="user_id" type="INT"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-10">
+    <changeSet author="SOMESH (generated)" id="1746528843955-12">
         <createTable tableName="tbl_user">
             <column name="id" type="INT"/>
             <column name="username" type="VARCHAR(50)"/>
@@ -133,7 +173,7 @@
             <column name="userStatus" type="ENUM('active', 'inactive')"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746524156931-11">
+    <changeSet author="SOMESH (generated)" id="1746528843955-13">
         <createView fullDefinition="false" remarks="VIEW" viewName="view_all_names">select `databasemigration`.`example_table2`.`id` AS `id`,`databasemigration`.`example_table2`.`name` AS `name` from `databasemigration`.`example_table2`</createView>
     </changeSet>
 </databaseChangeLog>
