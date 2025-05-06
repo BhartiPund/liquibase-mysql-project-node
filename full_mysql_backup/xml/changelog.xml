@@ -1,12 +1,26 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1746514349921-1">
+    <changeSet author="SOMESH (generated)" id="1746514569732-1">
         <createTable tableName="example_table2">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-2">
+    <changeSet author="SOMESH (generated)" id="1746514569732-2">
+        <createTable tableName="flyway_schema_history">
+            <column name="installed_rank" type="INT"/>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="script" type="VARCHAR(1000)"/>
+            <column name="checksum" type="INT"/>
+            <column name="installed_by" type="VARCHAR(100)"/>
+            <column name="installed_on" type="TIMESTAMP(0)"/>
+            <column name="execution_time" type="INT"/>
+            <column name="success" type="BIT(1)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746514569732-3">
         <createTable tableName="flywayusers11">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -14,7 +28,7 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-3">
+    <changeSet author="SOMESH (generated)" id="1746514569732-4">
         <createTable tableName="git_connections">
             <column name="id" type="INT"/>
             <column name="name" type="VARCHAR(100)"/>
@@ -29,7 +43,7 @@
             <column name="created_at" type="TIMESTAMP(0)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-4">
+    <changeSet author="SOMESH (generated)" id="1746514569732-5">
         <createTable tableName="table2">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -38,7 +52,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-5">
+    <changeSet author="SOMESH (generated)" id="1746514569732-6">
         <createTable tableName="table3">
             <column name="id" type="INT"/>
             <column name="Field1" type="VARCHAR(500)"/>
@@ -47,7 +61,7 @@
             <column name="Field4" type="VARCHAR(500)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-6">
+    <changeSet author="SOMESH (generated)" id="1746514569732-7">
         <createTable tableName="tbl_register">
             <column name="id" type="INT"/>
             <column name="username" type="VARCHAR(50)"/>
@@ -73,7 +87,7 @@
             <column name="user_id" type="INT"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746514349921-7">
+    <changeSet author="SOMESH (generated)" id="1746514569732-8">
         <createView fullDefinition="false" remarks="VIEW" viewName="view_all_names">select `databasemigration`.`example_table2`.`id` AS `id`,`databasemigration`.`example_table2`.`name` AS `name` from `databasemigration`.`example_table2`</createView>
     </changeSet>
 </databaseChangeLog>
