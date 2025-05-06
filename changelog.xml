@@ -4,18 +4,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-flyway_schema_history-0" author="auto">
-    <createTable tableName="flyway_schema_history">
-      <column name="installed_rank" type="int" />
-      <column name="version" type="varchar(50)" />
-      <column name="description" type="varchar(200)" />
-      <column name="type" type="varchar(20)" />
-      <column name="script" type="varchar(1000)" />
-      <column name="checksum" type="int" />
-      <column name="installed_by" type="varchar(100)" />
-      <column name="installed_on" type="timestamp" />
-      <column name="execution_time" type="int" />
-      <column name="success" type="bit(1)" />
+  <changeSet id="table-TABLE1-0" author="auto">
+    <createTable tableName="TABLE1">
+      <column name="COLUMN1" type="VARCHAR2" />
+      <column name="COLUMN2" type="VARCHAR2" />
     </createTable>
   </changeSet>
 </databaseChangeLog>
