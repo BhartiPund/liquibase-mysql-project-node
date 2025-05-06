@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-table2-0','auto','changelog.xml','2025-04-25 19:57:57',1,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5591274245'),('table-flywayusers11-0','auto','changelog.xml','2025-04-25 20:01:49',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5591505443'),('table-example_table2-0','auto','changelog.xml','2025-05-05 16:27:51',3,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-git_connections-1','auto','changelog.xml','2025-05-05 16:27:51',4,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-table3-0','auto','changelog.xml','2025-05-06 11:56:38',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6512795186'),('table-tbl_register-0','auto','changelog.xml','2025-05-06 12:02:48',6,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'6513164698');
+INSERT INTO `databasechangelog` VALUES ('table-table2-0','auto','changelog.xml','2025-04-25 19:57:57',1,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5591274245'),('table-flywayusers11-0','auto','changelog.xml','2025-04-25 20:01:49',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5591505443'),('table-example_table2-0','auto','changelog.xml','2025-05-05 16:27:51',3,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-git_connections-1','auto','changelog.xml','2025-05-05 16:27:51',4,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-table3-0','auto','changelog.xml','2025-05-06 11:56:38',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6512795186'),('table-tbl_register-0','auto','changelog.xml','2025-05-06 12:02:48',6,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'6513164698'),('view-view_all_names-0','auto','changelog.xml','2025-05-06 12:17:34',7,'EXECUTED','9:4433419a6d9a4fd9fc499a82f1cb22f6','createView viewName=view_all_names','',NULL,'4.31.0',NULL,NULL,'6514051085');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -244,6 +244,37 @@ LOCK TABLES `tbl_register` WRITE;
 /*!40000 ALTER TABLE `tbl_register` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tbl_register` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `view_all_names`
+--
+
+DROP TABLE IF EXISTS `view_all_names`;
+/*!50001 DROP VIEW IF EXISTS `view_all_names`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `view_all_names` AS SELECT 
+ 1 AS `id`,
+ 1 AS `name`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `view_all_names`
+--
+
+/*!50001 DROP VIEW IF EXISTS `view_all_names`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `view_all_names` AS select `example_table2`.`id` AS `id`,`example_table2`.`name` AS `name` from `example_table2` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -254,4 +285,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-06 12:17:18
+-- Dump completed on 2025-05-06 12:22:26
