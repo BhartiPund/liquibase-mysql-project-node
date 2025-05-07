@@ -146,7 +146,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-table2-0','auto','changelog.xml','2025-04-25 19:57:57',1,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5591274245'),('table-flywayusers11-0','auto','changelog.xml','2025-04-25 20:01:49',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5591505443'),('table-example_table2-0','auto','changelog.xml','2025-05-05 16:27:51',3,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-git_connections-1','auto','changelog.xml','2025-05-05 16:27:51',4,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-table3-0','auto','changelog.xml','2025-05-06 11:56:38',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6512795186'),('table-tbl_register-0','auto','changelog.xml','2025-05-06 12:02:48',6,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'6513164698'),('view-view_all_names-0','auto','changelog.xml','2025-05-06 12:17:34',7,'EXECUTED','9:4433419a6d9a4fd9fc499a82f1cb22f6','createView viewName=view_all_names','',NULL,'4.31.0',NULL,NULL,'6514051085'),('table-flyway_schema_history-0','auto','changelog.xml','2025-05-06 12:22:40',8,'EXECUTED','9:5fc63a116e7534b60646a1694c327e13','createTable tableName=flyway_schema_history','',NULL,'4.31.0',NULL,NULL,'6514357095'),('table-flyway_schema_old-0','auto','changelog.xml','2025-05-06 12:26:20',9,'EXECUTED','9:fd8fc44457b3edf9249462a99457095f','createTable tableName=flyway_schema_old','',NULL,'4.31.0',NULL,NULL,'6514577157'),('table-database_connections-0','auto','changelog.xml','2025-05-06 14:38:49',10,'EXECUTED','9:1b6ab163925c05835c6ec11ac7c046a9','createTable tableName=database_connections','',NULL,'4.31.0',NULL,NULL,'6522526333'),('table-tbl_user-0','auto','changelog.xml','2025-05-06 14:40:59',11,'EXECUTED','9:ac8fa139359aaf1549a65aa854803819','createTable tableName=tbl_user','',NULL,'4.31.0',NULL,NULL,'6522656365'),('table-connections-0','auto','changelog.xml','2025-05-06 15:07:12',12,'EXECUTED','9:7ea73d14ea6ec506d74b7069aa0dea20','createTable tableName=connections','',NULL,'4.31.0',NULL,NULL,'6524228979'),('table-custom_changelog_log-0','auto','changelog.xml','2025-05-06 16:19:40',13,'EXECUTED','9:7862579f909605f456b2e7b04dc96718','createTable tableName=custom_changelog_log','',NULL,'4.31.0',NULL,NULL,'6528575467');
+INSERT INTO `databasechangelog` VALUES ('table-table2-0','auto','changelog.xml','2025-04-25 19:57:57',1,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'5591274245'),('table-flywayusers11-0','auto','changelog.xml','2025-04-25 20:01:49',2,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'5591505443'),('table-example_table2-0','auto','changelog.xml','2025-05-05 16:27:51',3,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-git_connections-1','auto','changelog.xml','2025-05-05 16:27:51',4,'EXECUTED','9:1e5b47222c3f55b8037516c8d5964482','createTable tableName=git_connections','',NULL,'4.31.0',NULL,NULL,'6442667876'),('table-table3-0','auto','changelog.xml','2025-05-06 11:56:38',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6512795186'),('table-tbl_register-0','auto','changelog.xml','2025-05-06 12:02:48',6,'EXECUTED','9:284002c8724e721465a4c338fe5fb277','createTable tableName=tbl_register','',NULL,'4.31.0',NULL,NULL,'6513164698'),('view-view_all_names-0','auto','changelog.xml','2025-05-06 12:17:34',7,'EXECUTED','9:4433419a6d9a4fd9fc499a82f1cb22f6','createView viewName=view_all_names','',NULL,'4.31.0',NULL,NULL,'6514051085'),('table-flyway_schema_history-0','auto','changelog.xml','2025-05-06 12:22:40',8,'EXECUTED','9:5fc63a116e7534b60646a1694c327e13','createTable tableName=flyway_schema_history','',NULL,'4.31.0',NULL,NULL,'6514357095'),('table-flyway_schema_old-0','auto','changelog.xml','2025-05-06 12:26:20',9,'EXECUTED','9:fd8fc44457b3edf9249462a99457095f','createTable tableName=flyway_schema_old','',NULL,'4.31.0',NULL,NULL,'6514577157'),('table-database_connections-0','auto','changelog.xml','2025-05-06 14:38:49',10,'EXECUTED','9:1b6ab163925c05835c6ec11ac7c046a9','createTable tableName=database_connections','',NULL,'4.31.0',NULL,NULL,'6522526333'),('table-tbl_user-0','auto','changelog.xml','2025-05-06 14:40:59',11,'EXECUTED','9:ac8fa139359aaf1549a65aa854803819','createTable tableName=tbl_user','',NULL,'4.31.0',NULL,NULL,'6522656365'),('table-connections-0','auto','changelog.xml','2025-05-06 15:07:12',12,'EXECUTED','9:7ea73d14ea6ec506d74b7069aa0dea20','createTable tableName=connections','',NULL,'4.31.0',NULL,NULL,'6524228979'),('table-custom_changelog_log-0','auto','changelog.xml','2025-05-06 16:19:40',13,'EXECUTED','9:7862579f909605f456b2e7b04dc96718','createTable tableName=custom_changelog_log','',NULL,'4.31.0',NULL,NULL,'6528575467'),('table-example_table-0','auto','changelog.xml','2025-05-06 16:24:20',14,'EXECUTED','9:dcb2596b1ea53d3b8066c1cc318d8cab','createTable tableName=example_table','',NULL,'4.31.0',NULL,NULL,'6528855298');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,6 +174,28 @@ LOCK TABLES `databasechangeloglock` WRITE;
 /*!40000 ALTER TABLE `databasechangeloglock` DISABLE KEYS */;
 INSERT INTO `databasechangeloglock` VALUES (1,0,NULL,NULL);
 /*!40000 ALTER TABLE `databasechangeloglock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `example_table`
+--
+
+DROP TABLE IF EXISTS `example_table`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `example_table` (
+  `id` int DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `example_table`
+--
+
+LOCK TABLES `example_table` WRITE;
+/*!40000 ALTER TABLE `example_table` DISABLE KEYS */;
+/*!40000 ALTER TABLE `example_table` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -481,4 +503,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-06 16:23:59
+-- Dump completed on 2025-05-07 13:57:25

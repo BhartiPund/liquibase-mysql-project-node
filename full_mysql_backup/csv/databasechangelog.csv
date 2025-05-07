@@ -12,3 +12,4 @@ table-database_connections-0,auto,changelog.xml,Tue May 06 2025 14:38:49 GMT+053
 table-tbl_user-0,auto,changelog.xml,Tue May 06 2025 14:40:59 GMT+0530 (India Standard Time),11,EXECUTED,9:ac8fa139359aaf1549a65aa854803819,createTable tableName=tbl_user,,,4.31.0,,,6522656365
 table-connections-0,auto,changelog.xml,Tue May 06 2025 15:07:12 GMT+0530 (India Standard Time),12,EXECUTED,9:7ea73d14ea6ec506d74b7069aa0dea20,createTable tableName=connections,,,4.31.0,,,6524228979
 table-custom_changelog_log-0,auto,changelog.xml,Tue May 06 2025 16:19:40 GMT+0530 (India Standard Time),13,EXECUTED,9:7862579f909605f456b2e7b04dc96718,createTable tableName=custom_changelog_log,,,4.31.0,,,6528575467
+table-example_table-0,auto,changelog.xml,Tue May 06 2025 16:24:20 GMT+0530 (India Standard Time),14,EXECUTED,9:dcb2596b1ea53d3b8066c1cc318d8cab,createTable tableName=example_table,,,4.31.0,,,6528855298
