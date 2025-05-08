@@ -4,24 +4,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-  <changeSet id="table-tbl_user-0" author="auto">
-    <createTable tableName="tbl_user">
-      <column name="id" type="int" />
-      <column name="username" type="varchar(50)" />
-      <column name="password" type="varchar(255)" />
-      <column name="first_name" type="varchar(50)" />
-      <column name="last_name" type="varchar(50)" />
-      <column name="email" type="varchar(100)" />
-      <column name="mobile" type="varchar(20)" />
-      <column name="company_name" type="varchar(100)" />
-      <column name="company_id" type="varchar(100)" />
-      <column name="gender" type="enum('Male','Female','Other')" />
-      <column name="nature_of_business" type="varchar(100)" />
-      <column name="country" type="varchar(50)" />
-      <column name="date_of_birth" type="date" />
-      <column name="userType" type="enum('superadmin','admin','user')" />
-      <column name="created_at" type="timestamp" />
-      <column name="userStatus" type="enum('active','inactive')" />
+  <changeSet id="table-TABLE2-0" author="auto">
+    <createTable tableName="TABLE2">
+    <column name="id" type="INT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
     </createTable>
   </changeSet>
 </databaseChangeLog>
