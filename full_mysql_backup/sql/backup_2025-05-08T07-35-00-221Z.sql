@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-05-07 19:05:32',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'6624928678');
+INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-05-07 19:05:32',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'6624928678'),('table-table2-0','auto','changelog.xml','2025-05-07 19:07:18',2,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'6625035305');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,6 +99,31 @@ LOCK TABLES `flywayusers11` WRITE;
 /*!40000 ALTER TABLE `flywayusers11` DISABLE KEYS */;
 /*!40000 ALTER TABLE `flywayusers11` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `table2`
+--
+
+DROP TABLE IF EXISTS `table2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `table2` (
+  `id` int DEFAULT NULL,
+  `Field1` varchar(500) DEFAULT NULL,
+  `Field2` varchar(500) DEFAULT NULL,
+  `Field3` varchar(500) DEFAULT NULL,
+  `Field4` varchar(500) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `table2`
+--
+
+LOCK TABLES `table2` WRITE;
+/*!40000 ALTER TABLE `table2` DISABLE KEYS */;
+/*!40000 ALTER TABLE `table2` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -109,4 +134,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-07 19:06:49
+-- Dump completed on 2025-05-08 13:05:00
