@@ -1,4 +1,2 @@
 [object Object];
 
-[object Object];
-
