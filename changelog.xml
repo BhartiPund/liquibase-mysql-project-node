@@ -5,10 +5,10 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-  <changeSet id="table-example_table2-0" author="auto">
-    <createTable tableName="example_table2">
-      <column name="id" type="int" />
-      <column name="name" type="varchar(255)" />
+  <changeSet id="table-TABLECOM3-0" author="auto">
+    <createTable tableName="TABLECOM3">
+      <column name="COLUMN1" type="VARCHAR2(20)" />
+      <column name="COLUMN2" type="VARCHAR2(20)" />
     </createTable>
   </changeSet>
 
