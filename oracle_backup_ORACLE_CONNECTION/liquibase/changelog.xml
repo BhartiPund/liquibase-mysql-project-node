@@ -1,23 +1,42 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1746778471789-1">
-        <createTable tableName="NEWTBLE">
-            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
-            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
-        </createTable>
-    </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746778471789-2">
-        <createTable tableName="TABLE1">
+    <changeSet author="SOMESH (generated)" id="1746801396757-1">
+        <createTable tableName="COMP">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1746778471789-3">
+    <changeSet author="SOMESH (generated)" id="1746801396757-2">
+        <createTable tableName="EMP">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746801396757-3">
         <createTable tableName="TABLE2">
-            <column name="ID" type="NUMBER(*, 0)">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TABLE2"/>
-            </column>
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746801396757-4">
+        <createTable tableName="TBL_USER">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746801396757-5">
+        <createTable tableName="USERTABLE1">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1746801396757-6">
+        <createTable tableName="USER_TBLE">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
+            <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>
