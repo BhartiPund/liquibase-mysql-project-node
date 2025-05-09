@@ -46,7 +46,7 @@ CREATE TABLE `databasechangelog` (
 
 LOCK TABLES `databasechangelog` WRITE;
 /*!40000 ALTER TABLE `databasechangelog` DISABLE KEYS */;
-INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-05-07 19:05:32',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'6624928678'),('table-table2-0','auto','changelog.xml','2025-05-07 19:07:18',2,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'6625035305'),('table-flyway_schema_old-0','auto','changelog.xml','2025-05-08 13:07:21',3,'EXECUTED','9:fd8fc44457b3edf9249462a99457095f','createTable tableName=flyway_schema_old','',NULL,'4.31.0',NULL,NULL,'6689838171'),('table-tbl_user-0','auto','changelog.xml','2025-05-08 13:12:29',4,'EXECUTED','9:ac8fa139359aaf1549a65aa854803819','createTable tableName=tbl_user','',NULL,'4.31.0',NULL,NULL,'6690146373'),('table-table3-0','auto','changelog.xml','2025-05-08 14:16:20',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6693976956');
+INSERT INTO `databasechangelog` VALUES ('table-flywayusers11-0','auto','changelog.xml','2025-05-07 19:05:32',1,'EXECUTED','9:c30c4f3fda2c389f6814bca788f771ea','createTable tableName=flywayusers11','',NULL,'4.31.0',NULL,NULL,'6624928678'),('table-table2-0','auto','changelog.xml','2025-05-07 19:07:18',2,'EXECUTED','9:73ba4c26ab690a0828fae7af0989ab08','createTable tableName=table2','',NULL,'4.31.0',NULL,NULL,'6625035305'),('table-flyway_schema_old-0','auto','changelog.xml','2025-05-08 13:07:21',3,'EXECUTED','9:fd8fc44457b3edf9249462a99457095f','createTable tableName=flyway_schema_old','',NULL,'4.31.0',NULL,NULL,'6689838171'),('table-tbl_user-0','auto','changelog.xml','2025-05-08 13:12:29',4,'EXECUTED','9:ac8fa139359aaf1549a65aa854803819','createTable tableName=tbl_user','',NULL,'4.31.0',NULL,NULL,'6690146373'),('table-table3-0','auto','changelog.xml','2025-05-08 14:16:20',5,'EXECUTED','9:31075efccc80a889fc9cf60bb2bfd15d','createTable tableName=table3','',NULL,'4.31.0',NULL,NULL,'6693976956'),('table-example_table-0','auto','changelog.xml','2025-05-09 13:47:00',6,'EXECUTED','9:dcb2596b1ea53d3b8066c1cc318d8cab','createTable tableName=example_table','',NULL,'4.31.0',NULL,NULL,'6778617341'),('table-example_table2-0','auto','changelog.xml','2025-05-09 13:48:36',7,'EXECUTED','9:e7a388f597182344e25560367b467762','createTable tableName=example_table2','',NULL,'4.31.0',NULL,NULL,'6778713264');
 /*!40000 ALTER TABLE `databasechangelog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -74,6 +74,50 @@ LOCK TABLES `databasechangeloglock` WRITE;
 /*!40000 ALTER TABLE `databasechangeloglock` DISABLE KEYS */;
 INSERT INTO `databasechangeloglock` VALUES (1,0,NULL,NULL);
 /*!40000 ALTER TABLE `databasechangeloglock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `example_table`
+--
+
+DROP TABLE IF EXISTS `example_table`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `example_table` (
+  `id` int DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `example_table`
+--
+
+LOCK TABLES `example_table` WRITE;
+/*!40000 ALTER TABLE `example_table` DISABLE KEYS */;
+/*!40000 ALTER TABLE `example_table` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `example_table2`
+--
+
+DROP TABLE IF EXISTS `example_table2`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `example_table2` (
+  `id` int DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `example_table2`
+--
+
+LOCK TABLES `example_table2` WRITE;
+/*!40000 ALTER TABLE `example_table2` DISABLE KEYS */;
+/*!40000 ALTER TABLE `example_table2` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -225,4 +269,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-05-09 13:46:09
+-- Dump completed on 2025-05-09 13:49:01
