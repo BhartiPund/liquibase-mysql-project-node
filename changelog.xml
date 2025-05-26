@@ -5,18 +5,18 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-  <changeSet id="table-connections-0" author="auto">
-    <createTable tableName="connections">
-      <column name="id" type="int" />
-      <column name="connection_name" type="varchar(100)" />
-      <column name="name" type="varchar(100)" />
-      <column name="host" type="varchar(100)" />
-      <column name="port" type="int" />
-      <column name="database_name" type="varchar(100)" />
-      <column name="username" type="varchar(100)" />
-      <column name="created_at" type="timestamp" />
-      <column name="url" type="text" />
-      <column name="password" type="text" />
+  <changeSet id="table-flyway_schema_history-0" author="auto">
+    <createTable tableName="flyway_schema_history">
+      <column name="installed_rank" type="int" />
+      <column name="version" type="varchar(50)" />
+      <column name="description" type="varchar(200)" />
+      <column name="type" type="varchar(20)" />
+      <column name="script" type="varchar(1000)" />
+      <column name="checksum" type="int" />
+      <column name="installed_by" type="varchar(100)" />
+      <column name="installed_on" type="timestamp" />
+      <column name="execution_time" type="int" />
+      <column name="success" type="bit(1)" />
     </createTable>
   </changeSet>
 
