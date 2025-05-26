@@ -6,3 +6,6 @@ table-tbl_user-0,auto,changelog.xml,Thu May 08 2025 13:12:29 GMT+0530 (India Sta
 table-table3-0,auto,changelog.xml,Thu May 08 2025 14:16:20 GMT+0530 (India Standard Time),5,EXECUTED,9:31075efccc80a889fc9cf60bb2bfd15d,createTable tableName=table3,,,4.31.0,,,6693976956
 table-example_table-0,auto,changelog.xml,Fri May 09 2025 13:47:00 GMT+0530 (India Standard Time),6,EXECUTED,9:dcb2596b1ea53d3b8066c1cc318d8cab,createTable tableName=example_table,,,4.31.0,,,6778617341
 table-example_table2-0,auto,changelog.xml,Fri May 09 2025 13:48:36 GMT+0530 (India Standard Time),7,EXECUTED,9:e7a388f597182344e25560367b467762,createTable tableName=example_table2,,,4.31.0,,,6778713264
+table-git_connections-0,auto,changelog.xml,Fri May 23 2025 12:23:04 GMT+0530 (India Standard Time),8,EXECUTED,9:1e5b47222c3f55b8037516c8d5964482,createTable tableName=git_connections,,,4.31.0,,,7983180054
+table-migration_approval_requests-0,auto,changelog.xml,Mon May 26 2025 11:39:45 GMT+0530 (India Standard Time),9,EXECUTED,9:ed839cd399ef4a89d8859f65886e0859,createTable tableName=migration_approval_requests,,,4.31.0,,,8239781326
+table-role_permissions-1,auto,changelog.xml,Mon May 26 2025 11:39:45 GMT+0530 (India Standard Time),10,EXECUTED,9:5622a0b3b4359252c091312d88a79ed1,createTable tableName=role_permissions,,,4.31.0,,,8239781326
