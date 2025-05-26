@@ -9,3 +9,5 @@ table-example_table2-0,auto,changelog.xml,Fri May 09 2025 13:48:36 GMT+0530 (Ind
 table-git_connections-0,auto,changelog.xml,Fri May 23 2025 12:23:04 GMT+0530 (India Standard Time),8,EXECUTED,9:1e5b47222c3f55b8037516c8d5964482,createTable tableName=git_connections,,,4.31.0,,,7983180054
 table-migration_approval_requests-0,auto,changelog.xml,Mon May 26 2025 11:39:45 GMT+0530 (India Standard Time),9,EXECUTED,9:ed839cd399ef4a89d8859f65886e0859,createTable tableName=migration_approval_requests,,,4.31.0,,,8239781326
 table-role_permissions-1,auto,changelog.xml,Mon May 26 2025 11:39:45 GMT+0530 (India Standard Time),10,EXECUTED,9:5622a0b3b4359252c091312d88a79ed1,createTable tableName=role_permissions,,,4.31.0,,,8239781326
+table-connections-0,auto,changelog.xml,Mon May 26 2025 11:52:49 GMT+0530 (India Standard Time),11,EXECUTED,9:7ea73d14ea6ec506d74b7069aa0dea20,createTable tableName=connections,,,4.31.0,,,8240566161
+table-flyway_schema_history-0,auto,changelog.xml,Mon May 26 2025 12:11:38 GMT+0530 (India Standard Time),12,EXECUTED,9:5fc63a116e7534b60646a1694c327e13,createTable tableName=flyway_schema_history,,,4.31.0,,,8241695035
