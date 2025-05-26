@@ -5,9 +5,45 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-  <changeSet id="table-TABLE3-0" author="auto">
-    <createTable tableName="TABLE3">
-      <column name="COLUMN1" type="VARCHAR2(20)" />
+  <changeSet id="table-migration_approval_requests-0" author="auto">
+    <createTable tableName="migration_approval_requests">
+      <column name="id" type="int" />
+      <column name="user_id" type="int" />
+      <column name="username" type="varchar(50)" />
+      <column name="company_id" type="varchar(100)" />
+      <column name="company_name" type="varchar(100)" />
+      <column name="target_connection" type="varchar(255)" />
+      <column name="git_repo_url" type="varchar(255)" />
+      <column name="git_branch" type="varchar(100)" />
+      <column name="selected_items" type="text" />
+      <column name="status" type="enum('PENDING','APPROVED','REJECTED')" />
+      <column name="created_by" type="int" />
+      <column name="updated_by" type="int" />
+      <column name="created_at" type="timestamp" />
+      <column name="updated_at" type="timestamp" />
+      <column name="source_connection" type="varchar(255)" />
+      <column name="source_db_url" type="text" />
+      <column name="source_username" type="varchar(255)" />
+      <column name="source_password" type="text" />
+      <column name="sourceschema" type="varchar(255)" />
+      <column name="target_db_url" type="text" />
+      <column name="target_username" type="varchar(255)" />
+      <column name="target_password" type="text" />
+      <column name="targetschema" type="varchar(255)" />
+      <column name="git_username" type="varchar(255)" />
+      <column name="changelog_file" type="text" />
+      <column name="commit_message" type="text" />
+      <column name="migration_details" type="text" />
+      <column name="remark" type="text" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="table-role_permissions-1" author="auto">
+    <createTable tableName="role_permissions">
+      <column name="id" type="int" />
+      <column name="role_id" type="int" />
+      <column name="object_name" type="varchar(255)" />
+      <column name="action" type="enum('create','read','edit','delete')" />
     </createTable>
   </changeSet>
 
