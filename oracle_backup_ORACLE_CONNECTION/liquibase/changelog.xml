@@ -1,74 +1,79 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-    <changeSet author="SOMESH (generated)" id="1747027151284-1">
+    <changeSet author="SOMESH (generated)" id="1748338582069-1">
         <createTable tableName="EMP">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-2">
+    <changeSet author="SOMESH (generated)" id="1748338582069-2">
         <createTable tableName="COMP">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-3">
+    <changeSet author="SOMESH (generated)" id="1748338582069-3">
         <createView fullDefinition="true" viewName="VIEW1">CREATE OR REPLACE FORCE VIEW "VIEW1" ("COLUMN1", "COLUMN2", "COLUMN3") AS SELECT "COLUMN1","COLUMN2","COLUMN3"
     
 FROM EMP</createView>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-4">
+    <changeSet author="SOMESH (generated)" id="1748338582069-4">
         <createView fullDefinition="true" viewName="VIEW2">CREATE OR REPLACE FORCE VIEW "VIEW2" ("COLUMN1", "COLUMN2", "COLUMN3") AS SELECT "COLUMN1","COLUMN2","COLUMN3"
     
 FROM COMP</createView>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-5">
+    <changeSet author="SOMESH (generated)" id="1748338582069-5">
         <createTable tableName="TABLE1">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-6">
+    <changeSet author="SOMESH (generated)" id="1748338582069-6">
         <createTable tableName="TABLE2">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-7">
+    <changeSet author="SOMESH (generated)" id="1748338582069-7">
+        <createTable tableName="TABLE3">
+            <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="SOMESH (generated)" id="1748338582069-8">
         <createTable tableName="TABLECOM3">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-8">
+    <changeSet author="SOMESH (generated)" id="1748338582069-9">
         <createTable tableName="TABLEEMP">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN3" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-9">
+    <changeSet author="SOMESH (generated)" id="1748338582069-10">
         <createTable tableName="TABLE_TANVI3">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-10">
+    <changeSet author="SOMESH (generated)" id="1748338582069-11">
         <createTable tableName="TBL_USER">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-11">
+    <changeSet author="SOMESH (generated)" id="1748338582069-12">
         <createTable tableName="USERTABLE1">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
         </createTable>
     </changeSet>
-    <changeSet author="SOMESH (generated)" id="1747027151284-12">
+    <changeSet author="SOMESH (generated)" id="1748338582069-13">
         <createTable tableName="USER_TBLE">
             <column name="COLUMN1" type="VARCHAR2(20 BYTE)"/>
             <column name="COLUMN2" type="VARCHAR2(20 BYTE)"/>
