@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="table-role_permissions-0" author="auto">
+    <createTable tableName="role_permissions">
+      <column name="id" type="INT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="role_id" type="INT" />
+      <column name="object_name" type="VARCHAR(255)" />
+      <column name="action" type="ENUM(&apos;CREATE&apos;,&apos;READ&apos;,&apos;EDIT&apos;,&apos;DELETE&apos;)" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="data-role_permissions-0" author="auto">
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="357" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="358" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="359" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="360" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="361" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="362" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="363" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="364" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="365" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="366" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="367" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="368" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="369" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="370" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="371" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="372" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="373" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="374" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="375" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="376" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="377" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="378" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="379" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="380" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="3" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="381" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="382" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="383" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="384" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="385" />
+      <column name="object_name" value="Allow to Migrate" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="386" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="387" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="388" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="389" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="390" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="4" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="602" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="603" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="604" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="605" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="606" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="607" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="608" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="609" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="610" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="611" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="612" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="613" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="614" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="615" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="616" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="617" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="618" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="619" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="620" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="621" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="622" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="623" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="624" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="625" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="626" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="5" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="628" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="629" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="630" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="631" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="632" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="633" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="634" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="635" />
+      <column name="object_name" value="Display User List" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="636" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="637" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="638" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="639" />
+      <column name="object_name" value="Database Connections" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="640" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="641" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="642" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="643" />
+      <column name="object_name" value="Git Connection" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="644" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="645" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="646" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="647" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="648" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="649" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="650" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="651" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="652" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="653" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="654" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="655" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="8" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="create" />
+      <column name="id" value="656" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="7" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="657" />
+      <column name="object_name" value="Create User" />
+      <column name="role_id" value="7" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="read" />
+      <column name="id" value="658" />
+      <column name="object_name" value="Compare Database" />
+      <column name="role_id" value="7" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="delete" />
+      <column name="id" value="659" />
+      <column name="object_name" value="View Logs" />
+      <column name="role_id" value="7" />
+    </insert>
+    <insert tableName="role_permissions">
+      <column name="action" value="edit" />
+      <column name="id" value="660" />
+      <column name="object_name" value="Migrate" />
+      <column name="role_id" value="7" />
+    </insert>
+  </changeSet>
+
+</databaseChangeLog>
