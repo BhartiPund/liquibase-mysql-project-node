@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="table-roles-0" author="auto">
+    <createTable tableName="roles">
+      <column name="id" type="int">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="role_name" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="note" type="text" />
+      <column name="company_id" type="int" />
+      <column name="created_at" type="timestamp" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="data-roles-0" author="auto">
+    <insert tableName="roles">
+      <column name="company_id" value="102" />
+      <column name="created_at" value="2025-05-16 20:30:30" />
+      <column name="id" value="3" />
+      <column name="note" value="user created" />
+      <column name="role_name" value="user" />
+    </insert>
+    <insert tableName="roles">
+      <column name="company_id" value="102" />
+      <column name="created_at" value="2025-05-19 09:52:08" />
+      <column name="id" value="4" />
+      <column name="note" value="note" />
+      <column name="role_name" value="role" />
+    </insert>
+    <insert tableName="roles">
+      <column name="company_id" value="102" />
+      <column name="created_at" value="2025-05-19 10:41:43" />
+      <column name="id" value="5" />
+      <column name="note" value="Admin create" />
+      <column name="role_name" value="Admin" />
+    </insert>
+    <insert tableName="roles">
+      <column name="company_id" value="102" />
+      <column name="created_at" value="2025-05-20 20:14:31" />
+      <column name="id" value="7" />
+      <column name="note" value="role4 created" />
+      <column name="role_name" value="Role4" />
+    </insert>
+    <insert tableName="roles">
+      <column name="company_id" value="102" />
+      <column name="created_at" value="2025-05-22 16:13:33" />
+      <column name="id" value="8" />
+      <column name="note" value="manager created" />
+      <column name="role_name" value="manager" />
+    </insert>
+  </changeSet>
+
+  <changeSet id="table-git_connections-1" author="auto">
+    <createTable tableName="git_connections">
+      <column name="id" type="int">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="name" type="varchar(100)" />
+      <column name="branch" type="varchar(50)" />
+      <column name="url" type="text" />
+      <column name="username" type="varchar(100)" />
+      <column name="password" type="text" />
+      <column name="privateKey" type="text" />
+      <column name="provider" type="text" />
+      <column name="authType" type="varchar(50)" />
+      <column name="savePassword" type="int" />
+      <column name="created_at" type="timestamp" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="data-git_connections-1" author="auto">
+    <insert tableName="git_connections">
+      <column name="authType" value="basic" />
+      <column name="branch" value="main" />
+      <column name="created_at" value="2025-04-08 14:37:49" />
+      <column name="id" value="2" />
+      <column name="name" value="My Git Repo1" />
+      <column name="password" value="123-01-01 00:00:00" />
+      <column name="privateKey" />
+      <column name="provider" value="github" />
+      <column name="savePassword" />
+      <column name="url" value="https://github.com/BhartiPund/liquibase-mysql-project-node" />
+      <column name="username" value="bharti.pund@devotrend.com" />
+    </insert>
+    <insert tableName="git_connections">
+      <column name="authType" value="basic" />
+      <column name="branch" value="main" />
+      <column name="created_at" value="2025-04-08 21:03:47" />
+      <column name="id" value="5" />
+      <column name="name" value="My Git Backup" />
+      <column name="password" value="123-01-01 00:00:00" />
+      <column name="privateKey" />
+      <column name="provider" value="github" />
+      <column name="savePassword" />
+      <column name="url" value="https://github.com/BhartiPund/Git_backup.git" />
+      <column name="username" value="bharti.pund@devotrend.com" />
+    </insert>
+    <insert tableName="git_connections">
+      <column name="authType" value="basic" />
+      <column name="branch" value="main" />
+      <column name="created_at" value="2025-04-18 17:52:49" />
+      <column name="id" value="8" />
+      <column name="name" value="Bharti Pund" />
+      <column name="password" value="123-01-01 00:00:00" />
+      <column name="privateKey" />
+      <column name="provider" value="github" />
+      <column name="savePassword" />
+      <column name="url" value="https://github.com/BhartiPund/liquibase-mysql-project" />
+      <column name="username" value="bharti.pund@devotrend.com" />
+    </insert>
+  </changeSet>
+
+  <changeSet id="table-table2-2" author="auto">
+    <createTable tableName="table2">
+      <column name="id" type="int" />
+      <column name="Field1" type="varchar(500)" />
+      <column name="Field2" type="varchar(500)" />
+      <column name="Field3" type="varchar(500)" />
+      <column name="Field4" type="varchar(500)" />
+    </createTable>
+  </changeSet>
+
+</databaseChangeLog>
