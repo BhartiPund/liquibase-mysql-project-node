@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="table-NEWTBLE-0" author="auto">
+    <createTable tableName="NEWTBLE">
+      <column name="COLUMN1" type="varchar2(20)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="COLUMN2" type="varchar2(20)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="data-NEWTBLE-0" author="auto">
+    <insert tableName="NEWTBLE">
+      <column name="COLUMN1" value="col" />
+      <column name="COLUMN2" value="col1" />
+    </insert>
+    <insert tableName="NEWTBLE">
+      <column name="COLUMN1" value="xx" />
+      <column name="COLUMN2" value="cc" />
+    </insert>
+  </changeSet>
+
+</databaseChangeLog>
