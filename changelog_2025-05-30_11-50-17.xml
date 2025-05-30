@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="table-example_table-0" author="auto">
+    <createTable tableName="example_table">
+      <column name="id" type="int" />
+      <column name="name" type="varchar(255)" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="table-tbl_user-1" author="auto">
+    <createTable tableName="tbl_user">
+      <column name="id" type="int">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="username" type="varchar(50)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="password" type="varchar(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="first_name" type="varchar(50)" />
+      <column name="last_name" type="varchar(50)" />
+      <column name="email" type="varchar(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="mobile" type="varchar(20)" />
+      <column name="company_name" type="varchar(100)" />
+      <column name="company_id" type="varchar(100)" />
+      <column name="gender" type="enum(&apos;male&apos;,&apos;female&apos;,&apos;other&apos;)" />
+      <column name="nature_of_business" type="varchar(100)" />
+      <column name="country" type="varchar(50)" />
+      <column name="date_of_birth" type="date" />
+      <column name="userType" type="varchar(100)" />
+      <column name="created_at" type="timestamp" />
+      <column name="userStatus" type="enum(&apos;active&apos;,&apos;inactive&apos;)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="userTypeId" type="int" />
+    </createTable>
+  </changeSet>
+
+  <changeSet id="data-tbl_user-1" author="auto">
+    <insert tableName="tbl_user">
+      <column name="company_id" value="102-01-01 00:00:00" />
+      <column name="company_name" value="Devotrend IT" />
+      <column name="country" value="India" />
+      <column name="created_at" value="2025-02-25 20:37:22" />
+      <column name="date_of_birth" value="2025-02-25 00:00:00" />
+      <column name="email" value="bhartipund28@gmail.com" />
+      <column name="first_name" value="Tanvi" />
+      <column name="gender" value="Female" />
+      <column name="id" value="1" />
+      <column name="last_name" value="Sharma" />
+      <column name="mobile" value="9986525629" />
+      <column name="nature_of_business" value="nature" />
+      <column name="password" value="tanvi" />
+      <column name="username" value="tanvi@123.com" />
+      <column name="userStatus" value="active" />
+      <column name="userType" value="admin" />
+      <column name="userTypeId" value="5" />
+    </insert>
+    <insert tableName="tbl_user">
+      <column name="company_id" value="102-01-01 00:00:00" />
+      <column name="company_name" value="Devotrend IT" />
+      <column name="country" value="Andorra" />
+      <column name="created_at" value="2025-04-04 18:48:22" />
+      <column name="date_of_birth" value="2025-04-04 00:00:00" />
+      <column name="email" value="bharti@123.com" />
+      <column name="first_name" value="bharti" />
+      <column name="gender" value="Male" />
+      <column name="id" value="2" />
+      <column name="last_name" value="LAST" />
+      <column name="mobile" value="1234567898" />
+      <column name="nature_of_business" value="nature" />
+      <column name="password" value="123-01-01 00:00:00" />
+      <column name="username" value="bharti@123.com" />
+      <column name="userStatus" value="active" />
+      <column name="userType" value="Admin" />
+      <column name="userTypeId" />
+    </insert>
+    <insert tableName="tbl_user">
+      <column name="company_id" value="102-01-01 00:00:00" />
+      <column name="company_name" value="Devotrend IT" />
+      <column name="country" value="Belize" />
+      <column name="created_at" value="2025-05-20 10:33:09" />
+      <column name="date_of_birth" value="2025-05-20 00:00:00" />
+      <column name="email" value="bharti.pund@devotrend.com" />
+      <column name="first_name" value="Bharti" />
+      <column name="gender" value="Female" />
+      <column name="id" value="3" />
+      <column name="last_name" value="pund" />
+      <column name="mobile" value="2345678909" />
+      <column name="nature_of_business" value="nature" />
+      <column name="password" value="bharti" />
+      <column name="username" value="bharti.pund@devotrend.com" />
+      <column name="userStatus" value="active" />
+      <column name="userType" value="manager" />
+      <column name="userTypeId" value="5" />
+    </insert>
+    <insert tableName="tbl_user">
+      <column name="company_id" value="102-01-01 00:00:00" />
+      <column name="company_name" value="Devotrend IT" />
+      <column name="country" value="Albania" />
+      <column name="created_at" value="2025-05-20 20:16:00" />
+      <column name="date_of_birth" value="2025-05-20 00:00:00" />
+      <column name="email" value="new@123.com" />
+      <column name="first_name" value="new" />
+      <column name="gender" value="Male" />
+      <column name="id" value="4" />
+      <column name="last_name" value="last" />
+      <column name="mobile" value="4567654332" />
+      <column name="nature_of_business" value="nature" />
+      <column name="password" value="new" />
+      <column name="username" value="new@123.com" />
+      <column name="userStatus" value="active" />
+      <column name="userType" value="Admin" />
+      <column name="userTypeId" value="7" />
+    </insert>
+    <insert tableName="tbl_user">
+      <column name="company_id" value="102-01-01 00:00:00" />
+      <column name="company_name" value="Devotrend IT" />
+      <column name="country" value="Albania" />
+      <column name="created_at" value="2025-05-23 14:22:49" />
+      <column name="date_of_birth" value="2025-05-23 00:00:00" />
+      <column name="email" value="first@123.com" />
+      <column name="first_name" value="FIRST" />
+      <column name="gender" value="Male" />
+      <column name="id" value="5" />
+      <column name="last_name" value="LAST" />
+      <column name="mobile" value="4556666665" />
+      <column name="nature_of_business" value="nature" />
+      <column name="password" value="first" />
+      <column name="username" value="first@123.com" />
+      <column name="userStatus" value="active" />
+      <column name="userType" value="manager" />
+      <column name="userTypeId" value="8" />
+    </insert>
+  </changeSet>
+
+</databaseChangeLog>
